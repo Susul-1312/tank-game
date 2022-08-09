@@ -1,0 +1,9 @@
+{
+  "name": "tank-game",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "bun-types": "^0.1.5"
+  },
+  "type": "module",
+  "main": "src/index.ts"
+}
