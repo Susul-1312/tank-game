@@ -2,7 +2,6 @@ import Board from './lib/logic/board.js';
 import Tank from './lib/logic/tank.js';
 import fs from 'node:fs';
 import { saveBoard } from './lib/save.js';
-import renderSVG from './lib/render/svg.js';
 import renderPNG from './lib/render/png.js';
 
 const board: Board = new Board(10, 12);
