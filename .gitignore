@@ -1,5 +1,6 @@
 #  All Renders
 *.svg
+*.png
 
 # Saves
 *.tanksav

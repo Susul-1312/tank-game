@@ -12,7 +12,7 @@
     "allowJs": true,
 
     // "bun-types" is the important part
-    "types": ["node"]
+    "types": ["bun-types"]
   },
   "include": ["src/**/*.ts"]
 }

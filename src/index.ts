@@ -1,6 +1,6 @@
 import Board from './lib/logic/board.js';
 import Tank from './lib/logic/tank.js';
-import makeBoard from './lib/render/svg.js';
+import renderBoard from './lib/render/png.js';
 import fs from 'node:fs';
 import { saveBoard } from './lib/save.js';
 
@@ -12,5 +12,6 @@ board.addTank(tank2, 6, 3);
 board.giveChips(5);
 tank1.upgrade();
 tank1.attack(tank2);
-fs.writeFileSync('board.svg', makeBoard(board.board));
+fs.writeFileSync('board.png', await renderBoard(board.board));
+
 saveBoard('board', board);
