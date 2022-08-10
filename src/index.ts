@@ -4,6 +4,9 @@ import fs from 'node:fs';
 import { saveBoard } from './lib/save.js';
 import renderPNG from './lib/render/png.js';
 
+// import './lib/discord/bot.js';
+import './lib/discord/refresh.js';
+
 const board: Board = new Board(10, 12);
 const tank1: Tank = new Tank('Tänk 1');
 const tank2: Tank = new Tank('Tank €2');
