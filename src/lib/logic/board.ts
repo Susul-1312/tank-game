@@ -1,5 +1,5 @@
-import Tank from './tank';
-import { Direction, TankError, Cell } from '../shared-types';
+import Tank from './tank.js';
+import { Direction, TankError, Cell } from '../shared-types.js';
 
 class Board {
     board: Array<Array<Cell>>;

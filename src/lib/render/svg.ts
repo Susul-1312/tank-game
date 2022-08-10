@@ -1,4 +1,4 @@
-import { Cell } from '../shared-types'
+import { Cell } from '../shared-types.js'
 
 export default function makeBoard(board: Cell[][]): string {
     return `<svg width="1000" heigth="1000" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100%" height="100%" fill="#aaa" />${renderGrid(board)}</svg>`

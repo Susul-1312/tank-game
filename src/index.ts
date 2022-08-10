@@ -1,8 +1,8 @@
-import Board from './lib/logic/board';
-import Tank from './lib/logic/tank';
-import makeBoard from './lib/render/svg';
+import Board from './lib/logic/board.js';
+import Tank from './lib/logic/tank.js';
+import makeBoard from './lib/render/svg.js';
 import fs from 'node:fs';
-import { saveBoard } from './lib/save';
+import { saveBoard } from './lib/save.js';
 
 const board: Board = new Board(10, 12);
 const tank1: Tank = new Tank('Tänk 1');

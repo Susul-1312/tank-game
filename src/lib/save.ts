@@ -1,4 +1,4 @@
-import Board from './logic/board';
+import Board from './logic/board.js';
 import fs from 'node:fs';
 
 const fileExtension: string = '.tanksav';

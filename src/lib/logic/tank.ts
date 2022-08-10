@@ -1,5 +1,5 @@
-import Board from "./board";
-import { Direction, TankError } from '../shared-types';
+import Board from "./board.js";
+import { Direction, TankError } from '../shared-types.js';
 
 export default class Tank {
     name: string;
