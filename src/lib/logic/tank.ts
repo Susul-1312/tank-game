@@ -14,8 +14,8 @@ export default class Tank {
     y: number;
 
     constructor(name: string, color?: string, alive?: boolean, health?: number, chips?: number, range?: number) {
-        // Names cannot be longer than 8 characters and may only contain ascii
-        this.name = name.normalize("NFD").replace(/[^\p{ASCII}]/gu, "").substring(0, 8);
+        // Names cannot be longer than 8 characters and may only contain alphanumeric ascii characters and whitespace
+        this.name = name.normalize("NFD").replace(/[^\p{ASCII}]/gu, "").replace(/^(\w|\s)/gu, "").substring(0, 8);
         this.color = color || "#" + ((1 << 24) * Math.random() | 0).toString(16);
         this.alive = alive || true;
         this.health = health || 3;
