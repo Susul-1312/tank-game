@@ -1,14 +1,14 @@
 {
   "name": "tank-game",
+  "main": "src/index.ts",
   "module": "src/index.ts",
   "devDependencies": {
     "bun-types": "^0.1.5"
   },
-  "type": "module",
-  "main": "src/index.ts",
   "scripts": {
     "build": "tsc --outDir dist",
     "run": "node dist/index.js",
     "start": "npm run build && npm run run"
-  }
+  },
+  "type": "module"
 }
